@@ -53,9 +53,8 @@
 
 ## Usage
 
-1. **Controller Page**: Visit the main page (`/`) to search for songs, view the queue, and add songs.
-2. **Player Page**: Visit the player page (`/player`) to control playback and see the current song.
+- **Main Page**: The main page is the queue where users can search for songs and add them to the queue. Team members can interact with the queue to add or remove songs, creating a collaborative music-playing experience.
+- **Player Page**: The player page is where the song is actually playing. Users on this page can listen to the current song and control playback, while the queue is automatically updated in real time.
 
-## License
+The queue is managed server-side, meaning songs will be played automatically in order, and team members can control the playlist without needing the person connected to the speaker to intervene.
 
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
