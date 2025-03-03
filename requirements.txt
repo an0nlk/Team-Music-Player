@@ -1,0 +1,6 @@
+Flask==2.1.2
+Flask-CORS==3.1.1
+ytmusicapi==0.3.4
+yt-dlp==2023.3.4
+Flask-SocketIO==5.2.0
+requests==2.26.0
