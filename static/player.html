@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon LK's Epic Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player-section">
+            <h1>Anon LK's Epic Music Player</h1>
+
+            <h2>Now Playing</h2>
+            <p id="nowPlaying">No song playing</p>
+            <audio id="audioPlayer" controls onended="onSongEnded()"></audio>
+            <br />
+            <button id="playPauseButton" onclick="togglePlayPause()">Play/Pause</button>
+            <button onclick="playNext()">Play Next</button>
+        </div>
+
+        <div class="queue-section">
+            <h2>Queue</h2>
+            <table id="queue">
+                <thead>
+                    <tr>
+                        <th>Thumbnail</th>
+                        <th>Title</th>
+                        <th>Channel</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
